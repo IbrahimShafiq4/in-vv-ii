@@ -1539,7 +1539,7 @@
     </section>
 
     <!-- ==========================================================================
-       DRESS CODE SECTION
+       DRESS CODE SECTION (UPDATED)
        ========================================================================== -->
     <section class="reveal">
       <div class="kicker" data-i18n="dress_kicker">Attire</div>
@@ -1547,14 +1547,14 @@
       <div class="card">
         <div class="dress">
           <div>
-            <div class="sw" style="background:#1A2530"></div>
+            <div class="sw" style="background:#D3D3D3"></div>
             <h3 data-i18n="men">Men</h3>
-            <p data-i18n="men_dress">Dark Navy Suit</p>
+            <p data-i18n="men_dress">Light Grey Suit</p>
           </div>
           <div>
-            <div class="sw" style="background:#E5D9C5"></div>
+            <div class="sw" style="background:#F4C2D0"></div>
             <h3 data-i18n="women">Women</h3>
-            <p data-i18n="women_dress">Champagne & Ivory</p>
+            <p data-i18n="women_dress">Baby Pink Dresses</p>
           </div>
         </div>
         <p class="note" data-i18n="dress_note">We kindly ask you to stick to these colors 🤍</p>
@@ -1633,8 +1633,8 @@
     const audioPanel = document.getElementById('audio-panel');
 
     // Set initial volume to 25%
-    bgAudio.volume = 0.10;
-    audioControls.volume = 0.10;
+    bgAudio.volume = 0.25;
+    audioControls.volume = 0.25;
 
     openEnvelopeBtn.addEventListener('click', () => {
       document.getElementById('flap').style.transform = 'rotateX(180deg)';
@@ -1778,7 +1778,7 @@
       img.loading = 'lazy';
       img.decoding = 'async';
       img.onerror = () => {
-        img.src = ``;
+        img.src = `https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80&sig=${i}`;
       };
       img.onclick = () => { lbImg.src = img.src; lb.classList.add('on'); };
       gal.appendChild(img);
@@ -1811,8 +1811,8 @@
         venue_name: "Al-Masa Hall — Mokattam",
         map_btn: "Open Location in Maps", cal_btn: "Add to Calendar", share_btn: "Share",
         dress_kicker: "Attire", dress_title: "Dress Code",
-        men: "Men", men_dress: "Dark Navy Suit",
-        women: "Women", women_dress: "Champagne & Ivory",
+        men: "Men", men_dress: "Light Grey Suit",
+        women: "Women", women_dress: "Baby Pink Dresses",
         dress_note: "We kindly ask you to stick to these colors 🤍",
         rsvp_kicker: "RSVP", rsvp_title: "Will You Attend?",
         name_label: "Full Name", name_ph: "Your full name",
@@ -1851,8 +1851,8 @@
         venue_name: "قاعة الماسة — المقطم",
         map_btn: "افتح اللوكيشن على الخريطة", cal_btn: "أضف للتقويم", share_btn: "شارك",
         dress_kicker: "إطلالتكم", dress_title: "الدريس كود",
-        men: "الشباب", men_dress: "بدلة كحلي غامق",
-        women: "البنات", women_dress: "ألوان الشامبانيا والعاجي",
+        men: "الشباب", men_dress: "بدلة رمادي فاتح",
+        women: "البنات", women_dress: "فساتين بيبي بينك",
         dress_note: "يشرفنا التزامكم بالألوان دي في إطلالتكم 🤍",
         rsvp_kicker: "تأكيد الحضور", rsvp_title: "هل ستنضم إلينا؟",
         name_label: "الاسم بالكامل", name_ph: "اكتب اسمك هنا",
